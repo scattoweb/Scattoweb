@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scatto — сайты, автоматизация и брендинг для малого бизнеса</title>
+  <meta name="description" content="Делаем сайты, Telegram-ботов и фирменный стиль для небольшого бизнеса. Заявки сразу в Telegram, понятные цены, быстрый запуск.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Scatto — сайты, автоматизация и брендинг для малого бизнеса">
+  <meta property="og:description" content="Делаем так, чтобы клиенты находили вас сами, заявки приходили в Telegram, а рутина не съедала ваш день.">
+  <meta property="og:type" content="website">
+  <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- TODO: заменить ссылки t.me/scatto_team и wa.me на реальные контакты -->
+  <header class="header">
+    <a class="logo" href="/" aria-label="Scatto — на главную">
+      <span class="logo__mark" aria-hidden="true">sc</span>
+    </a>
+
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#works">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--dark btn--sm" href="https://t.me/scatto_team" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
+        Написать
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__nav" aria-label="Меню">
+      <a href="#works">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="btn btn--light" href="https://t.me/scatto_team" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
+      Обсудить проект в Telegram
+    </a>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero__stage">
+        <div class="wordmark" aria-hidden="true">
+          <span>S</span><span>C</span><span>A</span><span>T</span><span>T</span><span>O</span>
+        </div>
+
+        <!-- Иллюстрации-заглушки услуг. Потом заменить на фото реальных работ. -->
+        <div class="tile tile--site" aria-hidden="true">
+          <div class="tile__in">
+            <div class="mock">
+              <div class="mock__bar"><i></i><i></i><i></i></div>
+              <div class="mock__title"></div>
+              <div class="mock__line"></div>
+              <div class="mock__line mock__line--short"></div>
+              <div class="mock__btn"></div>
+            </div>
+            <span class="tile__tag">Сайт</span>
+          </div>
+        </div>
+
+        <div class="tile tile--bot" aria-hidden="true">
+          <div class="tile__in">
+            <div class="chat">
+              <p class="chat__msg">Новая заявка 🔔<br><b>Анна · стрижка · пт 15:00</b></p>
+              <p class="chat__msg chat__msg--out">Записали ✓ Напомним</p>
+            </div>
+            <span class="tile__tag">Автоматизация</span>
+          </div>
+        </div>
+
+        <div class="tile tile--brand" aria-hidden="true">
+          <div class="tile__in">
+            <span class="brand-glyph">Aa</span>
+            <span class="swatches"><i></i><i></i><i></i></span>
+            <span class="tile__tag">Брендинг</span>
+          </div>
+        </div>
+
+        <div class="tile tile--insta" aria-hidden="true">
+          <div class="tile__in">
+            <span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="tile__tag">Instagram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__copy">
+        <h1 class="hero__title">Сайты, автоматизация и&nbsp;брендинг для небольшого бизнеса</h1>
+        <div class="hero__side">
+          <p class="hero__lead">Делаем так, чтобы клиенты находили вас сами, заявки приходили в&nbsp;Telegram, а&nbsp;рутина не&nbsp;съедала ваш день.</p>
+          <div class="hero__cta">
+            <a class="btn btn--dark btn--lg" href="https://t.me/scatto_team" target="_blank" rel="noopener" data-hero-cta>
+              <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
+              Обсудить проект
+            </a>
+            <a class="link-arrow" href="#works">Смотреть работы <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero__hint">Ответим в&nbsp;течение часа · первый созвон бесплатно</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="intro__panel">
+        <p class="intro__text" id="intro-title"><b>Привет! Мы Scatto</b> — команда, которая берёт на&nbsp;себя то, на&nbsp;что у&nbsp;владельца бизнеса не&nbsp;хватает рук: сайт, который приводит клиентов, бота, который принимает заявки, и&nbsp;бренд, который запоминают.</p>
+        <div class="intro__aside">
+          <p>Scatto по-итальянски — «щелчок». Так и&nbsp;работаем: вы&nbsp;рассказываете о&nbsp;задаче, мы&nbsp;берём на&nbsp;себя всё остальное и&nbsp;говорим с&nbsp;вами без технических терминов.</p>
+          <a class="pill pill--dark" href="#process">Как мы работаем</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="sticky-cta btn btn--dark btn--lg" href="https://t.me/scatto_team" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+    <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
+    Обсудить проект в Telegram
+  </a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 4.3 18.7 19.6c-.24 1.08-.88 1.35-1.79.84l-4.94-3.64-2.38 2.3c-.26.26-.49.48-1 .48l.36-5.03 9.15-8.27c.4-.36-.09-.55-.62-.2L6.17 13.2 1.3 11.68c-1.06-.33-1.08-1.06.22-1.57L20.55 2.77c.88-.32 1.65.2 1.39 1.53Z"/></symbol>
+  </svg>
+</body>
+</html>
