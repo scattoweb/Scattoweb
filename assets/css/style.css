@@ -17,21 +17,19 @@
 }
 
 :root {
-  --bg: #ffffff;
-  --ink: #101114;
-  --ink-soft: #5c5e66;
-  --line: #e7e7ea;
-  --dark: #101114;
-  --dark-2: #24252b;
-  --on-dark: #f3f3f5;
-  --on-dark-soft: #a9abb3;
-
-  /* Цвета плиток-заглушек; заменить на фирменные */
-  --c-orange: #ff6a3d;
-  --c-teal: #0e5d59;
-  --c-violet: #6a4cf5;
-  --c-pink: #ffb3d1;
-  --c-lime: #d6f45c;
+  /* Цвета из логотипа: чёрный + шампань */
+  --bg: #f6f3ee;
+  --ink: #0b0b0b;
+  --ink-soft: #5f5a54;
+  --line: #e4ddd3;
+  --dark: #0b0b0b;
+  --dark-2: #22201e;
+  --on-dark: #f3eee7;
+  --on-dark-soft: #a8a097;
+  --gold: #cbb9a6;
+  --gold-light: #ddcec0;
+  --gold-dark: #9a8774;
+  --stone: #e6ded3;
 
   --radius: 20px;
   --gutter: 16px;
@@ -56,7 +54,7 @@ body {
 
 h1, p { margin: 0; }
 a { color: inherit; }
-:focus-visible { outline: 2px solid var(--c-violet); outline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 3px; }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -74,9 +72,9 @@ a { color: inherit; }
 .btn:active { transform: translateY(0); }
 .btn--sm { min-height: 44px; padding: 0 18px; font-size: 15px; }
 .btn--lg { min-height: 56px; padding: 0 28px; font-size: 17px; }
-.btn--dark { background: var(--ink); color: #fff; }
+.btn--dark { background: var(--ink); color: var(--on-dark); }
 .btn--dark:hover { background: var(--dark-2); }
-.btn--light { background: #fff; color: var(--ink); min-height: 56px; padding: 0 24px; }
+.btn--light { background: var(--bg); color: var(--ink); min-height: 56px; padding: 0 24px; }
 
 .icon { width: 20px; height: 20px; flex: none; }
 .btn--sm .icon { width: 18px; height: 18px; }
@@ -91,7 +89,7 @@ a { color: inherit; }
   text-decoration: none;
 }
 .pill--dark { background: var(--dark-2); color: var(--on-dark); transition: background-color .2s; }
-.pill--dark:hover { background: #33353d; }
+.pill--dark:hover { background: #33302c; }
 
 .link-arrow {
   display: inline-flex;
@@ -114,24 +112,13 @@ a { color: inherit; }
   justify-content: space-between;
   height: var(--header-h);
   padding: 0 var(--gutter);
-  background: rgba(255, 255, 255, .86);
+  background: rgba(246, 243, 238, .86);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
 
 .logo { display: inline-flex; text-decoration: none; }
-.logo__mark {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -.02em;
-  line-height: 1;
-}
+.logo__mark { display: block; width: 54px; height: auto; }
 
 .nav { display: none; }
 
@@ -154,7 +141,7 @@ a { color: inherit; }
   width: 18px;
   height: 2px;
   border-radius: 2px;
-  background: #fff;
+  background: var(--on-dark);
   transition: transform .25s var(--ease);
 }
 .burger[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
@@ -199,18 +186,31 @@ a { color: inherit; }
   position: relative;
   display: grid;
   place-items: center;
-  padding: 92px 0 100px;
+  padding: 92px 0 112px;
 }
 
 .wordmark {
   position: relative;
   z-index: 2;
   display: flex;
-  font-size: clamp(64px, 24vw, 300px);
-  font-weight: 500;
+  align-items: baseline;
+  font-size: clamp(48px, 17.5vw, 260px);
+  font-weight: 300;
   line-height: .8;
-  letter-spacing: -.035em;
+  letter-spacing: .09em;
+  margin-right: -.09em;
   user-select: none;
+}
+/* «A» без перекладины, как в логотипе */
+.lambda svg {
+  display: block;
+  width: .76em;
+  height: .71em;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 6.6;
+  stroke-linejoin: miter;
 }
 .wordmark span {
   display: inline-block;
@@ -222,6 +222,19 @@ a { color: inherit; }
 .wordmark span:nth-child(5) { animation-delay: .2s; }
 .wordmark span:nth-child(6) { animation-delay: .25s; }
 @keyframes rise { from { opacity: 0; transform: translateY(40%); } }
+
+/* Уголки видоискателя: «наводятся» на кадр при загрузке */
+.frame {
+  position: absolute;
+  z-index: 0;
+  width: 15vw;
+  height: 15vw;
+  border: 0 solid var(--gold-dark);
+  animation: focus .9s var(--ease) both .15s;
+}
+.frame--tr { top: 56px; right: 3%; border-width: 2px 2px 0 0; --fx: 14px; --fy: -14px; }
+.frame--bl { bottom: 64px; left: 3%; border-width: 0 0 2px 2px; --fx: -14px; --fy: 14px; }
+@keyframes focus { from { opacity: 0; transform: translate(var(--fx), var(--fy)); } }
 
 /* Плитки: .tile — появление, .tile__in — лёгкое «парение» */
 .tile {
@@ -254,7 +267,7 @@ a { color: inherit; }
 }
 
 /* Сайт */
-.tile--site { --w: 27vw; --ar: 1; --bg-tile: var(--c-orange); --t: 7s; --d: .35s; top: 4px; left: 5%; z-index: 1; color: var(--ink); }
+.tile--site { --w: 27vw; --ar: 1; --bg-tile: var(--gold); --t: 7s; --d: .35s; top: 4px; left: 5%; z-index: 1; color: var(--ink); }
 .mock {
   position: absolute;
   inset: 16% 12% 30%;
@@ -263,18 +276,18 @@ a { color: inherit; }
   gap: 6%;
   padding: 8%;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, .14);
+  background: #fbf9f6;
+  box-shadow: 0 10px 24px rgba(60, 45, 30, .16);
 }
 .mock__bar { display: flex; gap: 3px; }
 .mock__bar i { width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
 .mock__title { height: 9px; width: 80%; border-radius: 3px; background: var(--ink); }
 .mock__line { height: 4px; width: 100%; border-radius: 2px; background: var(--line); }
 .mock__line--short { width: 60%; }
-.mock__btn { height: 10px; width: 46%; border-radius: 999px; background: var(--c-orange); }
+.mock__btn { height: 10px; width: 46%; border-radius: 999px; background: var(--ink); }
 
 /* Автоматизация */
-.tile--bot { --w: 52vw; --ar: 1.75; --bg-tile: var(--c-teal); --t: 8s; --d: .5s; bottom: 0; right: 4%; z-index: 3; color: #e5f3f1; }
+.tile--bot { --w: 52vw; --ar: 1.75; --bg-tile: var(--dark); --t: 8s; --d: .5s; bottom: 0; right: 4%; z-index: 3; color: var(--on-dark-soft); }
 .chat {
   position: absolute;
   inset: 10px 10px 34px;
@@ -288,7 +301,7 @@ a { color: inherit; }
   max-width: 92%;
   padding: 6px 9px;
   border-radius: 10px 10px 10px 3px;
-  background: #fff;
+  background: var(--bg);
   color: var(--ink);
   font-size: 10.5px;
   line-height: 1.3;
@@ -297,29 +310,29 @@ a { color: inherit; }
 .chat__msg--out {
   align-self: flex-end;
   border-radius: 10px 10px 3px 10px;
-  background: var(--c-lime);
+  background: var(--gold-light);
 }
 
 /* Брендинг */
-.tile--brand { --w: 17vw; --ar: 1; --bg-tile: var(--c-violet); --t: 6.5s; --d: .45s; top: 22px; right: 9%; z-index: 1; color: #fff; }
+.tile--brand { --w: 17vw; --ar: 1; --bg-tile: var(--stone); --t: 6.5s; --d: .45s; top: 22px; right: 9%; z-index: 1; color: var(--ink); }
 .brand-glyph {
   position: absolute;
   top: 12%;
   left: 12%;
   font-size: clamp(20px, 6vw, 64px);
-  font-weight: 600;
-  letter-spacing: -.04em;
+  font-weight: 300;
+  letter-spacing: -.02em;
   line-height: 1;
 }
 .swatches { position: absolute; left: 14%; bottom: 14%; display: flex; }
-.swatches i { width: 12px; height: 12px; margin-right: -3px; border: 2px solid var(--c-violet); border-radius: 50%; }
-.swatches i:nth-child(1) { background: var(--c-lime); }
-.swatches i:nth-child(2) { background: var(--c-pink); }
+.swatches i { width: 12px; height: 12px; margin-right: -3px; border: 2px solid var(--stone); border-radius: 50%; }
+.swatches i:nth-child(1) { background: var(--ink); }
+.swatches i:nth-child(2) { background: var(--gold); }
 .swatches i:nth-child(3) { background: #fff; }
 .tile--brand .tile__tag { display: none; }
 
 /* Instagram — только на широких экранах */
-.tile--insta { display: none; --ar: .82; --bg-tile: var(--c-pink); --t: 7.5s; --d: .6s; color: var(--ink); }
+.tile--insta { display: none; --ar: .82; --bg-tile: var(--dark); --t: 7.5s; --d: .6s; color: var(--on-dark-soft); }
 .grid {
   position: absolute;
   inset: 12% 12% 26%;
@@ -327,9 +340,9 @@ a { color: inherit; }
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
 }
-.grid i { border-radius: 3px; background: rgba(255, 255, 255, .7); }
-.grid i:nth-child(odd) { background: var(--ink); }
-.grid i:nth-child(5) { background: var(--c-lime); }
+.grid i { border-radius: 3px; background: rgba(255, 255, 255, .1); }
+.grid i:nth-child(odd) { background: var(--gold); }
+.grid i:nth-child(5) { background: var(--bg); }
 
 .hero__copy {
   display: grid;
@@ -396,7 +409,7 @@ a { color: inherit; }
 @media (min-width: 960px) {
   :root { --gutter: 40px; --header-h: 96px; --radius: 24px; }
 
-  .logo__mark { width: 64px; height: 64px; font-size: 22px; }
+  .logo__mark { width: 72px; }
 
   .nav {
     position: absolute;
@@ -412,12 +425,15 @@ a { color: inherit; }
 
   .hero { min-height: calc(100svh - var(--header-h)); gap: 32px; padding-bottom: 48px; }
   .hero__stage { padding: 9vh 0 11vh; }
-  .wordmark { font-size: min(18vw, 30vh, 300px); }
+  .wordmark { font-size: min(15vw, 26vh, 260px); }
+  .frame { width: min(9vw, 15vh); height: min(9vw, 15vh); }
+  .frame--tr { top: 3vh; right: 3%; }
+  .frame--bl { bottom: 4vh; left: 4%; }
 
   .tile--site  { --w: min(17vw, 25vh); top: 0; left: 11%; }
-  .tile--bot   { --w: min(24vw, 36vh); --ar: 1.6; bottom: 0; right: 17%; }
+  .tile--bot   { --w: min(23vw, 34vh); --ar: 1.6; bottom: -5vh; right: 15%; }
   .tile--brand { --w: min(11vw, 17vh); top: 4vh; right: 7%; }
-  .tile--insta { display: block; --w: min(10vw, 16vh); bottom: 1vh; left: 26%; z-index: 3; }
+  .tile--insta { display: block; --w: min(10vw, 16vh); bottom: -3vh; left: 23%; z-index: 3; }
 
   .tile__in { border-radius: 18px; }
   .tile__tag { left: 12px; bottom: 12px; font-size: 13px; padding: 4px 11px; }
