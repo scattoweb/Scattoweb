@@ -1,54 +1,55 @@
 <!doctype html>
-<html lang="ru">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scatto — сайты, автоматизация и брендинг для малого бизнеса</title>
-  <meta name="description" content="Делаем сайты, Telegram-ботов и фирменный стиль для небольшого бизнеса. Заявки сразу в Telegram, понятные цены, быстрый запуск.">
+  <title>Scatto — Siti web, branding e Google Maps per attività locali</title>
+  <meta name="description" content="Siti web, branding e schede Google Maps per attività locali in Italia. I clienti ti trovano su Google e prenotano su WhatsApp in pochi tocchi.">
   <meta name="theme-color" content="#f6f3ee">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Scatto — сайты, автоматизация и брендинг для малого бизнеса">
-  <meta property="og:description" content="Делаем так, чтобы клиенты находили вас сами, заявки приходили в Telegram, а рутина не съедала ваш день.">
+  <meta property="og:title" content="Scatto — Siti web, branding e Google Maps per attività locali">
+  <meta property="og:description" content="Ti facciamo trovare su Google, ti diamo un'immagine che si ricorda e un sito da cui i clienti prenotano su WhatsApp.">
   <meta property="og:type" content="website">
-  <link rel="preload" href="assets/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <meta property="og:locale" content="it_IT">
+  <link rel="preload" href="assets/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <!-- TODO: заменить ссылки t.me/scatto_team и wa.me на реальные контакты -->
+  <!-- TODO: sostituire wa.me/390000000000 con il numero WhatsApp reale -->
   <header class="header">
-    <a class="logo" href="/" aria-label="Scatto — на главную">
+    <a class="logo" href="/" aria-label="Scatto — home">
       <img class="logo__mark" src="assets/img/logo-mark.svg" alt="" width="454" height="346">
     </a>
 
-    <nav class="nav" aria-label="Основное меню">
-      <a href="#works">Работы</a>
-      <a href="#services">Услуги</a>
-      <a href="#prices">Цены</a>
-      <a href="#contact">Контакты</a>
+    <nav class="nav" aria-label="Menu principale">
+      <a href="#lavori">Lavori</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#contatti">Contatti</a>
     </nav>
 
     <div class="header__actions">
-      <a class="btn btn--dark btn--sm" href="https://t.me/scatto_team" target="_blank" rel="noopener">
-        <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
-        Написать
+      <a class="btn btn--dark btn--sm" href="https://wa.me/390000000000" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+        Scrivici
       </a>
-      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+      <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span>
       </button>
     </div>
   </header>
 
   <div class="menu" id="menu" hidden>
-    <nav class="menu__nav" aria-label="Меню">
-      <a href="#works">Работы</a>
-      <a href="#services">Услуги</a>
-      <a href="#prices">Цены</a>
-      <a href="#contact">Контакты</a>
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#lavori">Lavori</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#contatti">Contatti</a>
     </nav>
-    <a class="btn btn--light" href="https://t.me/scatto_team" target="_blank" rel="noopener">
-      <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
-      Обсудить проект в Telegram
+    <a class="btn btn--light" href="https://wa.me/390000000000" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+      Scrivici su WhatsApp
     </a>
   </div>
 
@@ -59,84 +60,168 @@
           <span>S</span><span>C</span><span class="lambda"><svg viewBox="0 0 76 71"><path d="M2.5 71 38 6.5 73.5 71"/></svg></span><span>T</span><span>T</span><span>O</span>
         </div>
 
-        <!-- Уголки «видоискателя» из логотипа -->
+        <!-- Angoli del mirino, come nel logo -->
         <span class="frame frame--tr" aria-hidden="true"></span>
         <span class="frame frame--bl" aria-hidden="true"></span>
 
-        <!-- Иллюстрации-заглушки услуг. Потом заменить на фото реальных работ. -->
-        <div class="tile tile--site" aria-hidden="true">
+        <!-- Lavori reali in miniatura -->
+        <div class="tile tile--a" aria-hidden="true">
           <div class="tile__in">
-            <div class="mock">
-              <div class="mock__bar"><i></i><i></i><i></i></div>
-              <div class="mock__title"></div>
-              <div class="mock__line"></div>
-              <div class="mock__line mock__line--short"></div>
-              <div class="mock__btn"></div>
-            </div>
-            <span class="tile__tag">Сайт</span>
+            <img src="assets/img/works/vovk-tile.webp" alt="" width="480" height="640">
+            <span class="tile__tag">Barbiere · Genova</span>
           </div>
         </div>
 
-        <div class="tile tile--bot" aria-hidden="true">
+        <div class="tile tile--b" aria-hidden="true">
+          <div class="tile__in">
+            <img src="assets/img/works/squisito-tile.webp" alt="" width="480" height="640">
+            <span class="tile__tag">Caffè · Brescia</span>
+          </div>
+        </div>
+
+        <div class="tile tile--c" aria-hidden="true">
+          <div class="tile__in">
+            <img src="assets/img/works/bodygym-tile.webp" alt="" width="480" height="640">
+            <span class="tile__tag">Palestra · Genova</span>
+          </div>
+        </div>
+
+        <div class="tile tile--chat" aria-hidden="true">
           <div class="tile__in">
             <div class="chat">
-              <p class="chat__msg">Новая заявка 🔔<br><b>Анна · стрижка · пт 15:00</b></p>
-              <p class="chat__msg chat__msg--out">Записали ✓ Напомним</p>
+              <p class="chat__msg">Nuova prenotazione 🔔<br><b>Marco · taglio + barba · sab 10:30</b></p>
+              <p class="chat__msg chat__msg--out">Confermato ✓ A sabato!</p>
             </div>
-            <span class="tile__tag">Автоматизация</span>
-          </div>
-        </div>
-
-        <div class="tile tile--brand" aria-hidden="true">
-          <div class="tile__in">
-            <span class="brand-glyph">Aa</span>
-            <span class="swatches"><i></i><i></i><i></i></span>
-            <span class="tile__tag">Брендинг</span>
-          </div>
-        </div>
-
-        <div class="tile tile--insta" aria-hidden="true">
-          <div class="tile__in">
-            <span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-            <span class="tile__tag">Instagram</span>
+            <span class="tile__tag tile__tag--line">Prenotazioni su WhatsApp</span>
           </div>
         </div>
       </div>
 
       <div class="hero__copy">
-        <h1 class="hero__title">Сайты, автоматизация и&nbsp;брендинг для небольшого бизнеса</h1>
+        <h1 class="hero__title">Siti web, branding e&nbsp;Google&nbsp;Maps per attività&nbsp;locali</h1>
         <div class="hero__side">
-          <p class="hero__lead">Делаем так, чтобы клиенты находили вас сами, заявки приходили в&nbsp;Telegram, а&nbsp;рутина не&nbsp;съедала ваш день.</p>
+          <p class="hero__lead">Ti facciamo trovare su&nbsp;Google, ti diamo un’immagine che si ricorda e un sito da cui i clienti prenotano su&nbsp;WhatsApp in pochi tocchi.</p>
           <div class="hero__cta">
-            <a class="btn btn--dark btn--lg" href="https://t.me/scatto_team" target="_blank" rel="noopener" data-hero-cta>
-              <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
-              Обсудить проект
+            <a class="btn btn--dark btn--lg" href="https://wa.me/390000000000" target="_blank" rel="noopener" data-hero-cta>
+              <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+              Scrivici su WhatsApp
             </a>
-            <a class="link-arrow" href="#works">Смотреть работы <span aria-hidden="true">↓</span></a>
+            <a class="link-arrow" href="#lavori">Guarda i lavori <span aria-hidden="true">↓</span></a>
           </div>
-          <p class="hero__hint">Ответим в&nbsp;течение часа · первый созвон бесплатно</p>
+          <p class="hero__hint">Rispondiamo entro un’ora · prima consulenza gratuita</p>
         </div>
       </div>
     </section>
 
-    <section class="intro" id="about" aria-labelledby="intro-title">
+    <section class="intro" id="chi-siamo" aria-labelledby="intro-title">
       <div class="intro__panel">
-        <p class="intro__text" id="intro-title"><b>Привет! Мы Scatto</b> — команда, которая берёт на&nbsp;себя то, на&nbsp;что у&nbsp;владельца бизнеса не&nbsp;хватает рук: сайт, который приводит клиентов, бота, который принимает заявки, и&nbsp;бренд, который запоминают.</p>
+        <p class="intro__text" id="intro-title"><b>Ciao! Siamo Scatto</b> — facciamo per le attività locali quello per cui il titolare non ha tempo: un sito che porta clienti, prenotazioni che arrivano da sole su&nbsp;WhatsApp, un’immagine che si ricorda e una scheda Google che ti fa trovare.</p>
         <div class="intro__aside">
-          <p>Scatto по-итальянски — «щелчок». Так и&nbsp;работаем — как по&nbsp;щелчку пальцев: вы&nbsp;рассказываете о&nbsp;задаче, а&nbsp;дальше всё делается будто само. Остальное берём на&nbsp;себя и&nbsp;говорим с&nbsp;вами без технических терминов.</p>
-          <a class="pill pill--dark" href="#process">Как мы работаем</a>
+          <p>Scatto, come uno schiocco di dita: ci racconti cosa ti serve e il resto succede, senza tecnicismi e senza perdere tempo.</p>
+          <a class="pill pill--dark" href="#come-lavoriamo">Come lavoriamo</a>
         </div>
+      </div>
+    </section>
+
+    <section class="works" id="lavori" aria-labelledby="works-title">
+      <div class="section-head">
+        <p class="pill pill--line">Lavori</p>
+        <h2 class="section-title" id="works-title">Siti pensati per il telefono, da cui i clienti prenotano davvero</h2>
+        <p class="section-lead">Barbieri, caffè, palestre e studi di Brescia e Genova. Ogni progetto parte da una domanda: cosa deve fare il cliente appena apre il sito?</p>
+      </div>
+
+      <div class="works__list">
+        <article class="work" style="--work-bg:#121212; --work-fg:#f3eee7">
+          <div class="work__info">
+            <p class="work__meta">Barbiere · Genova</p>
+            <h3 class="work__title">Barber Vovk</h3>
+            <p class="work__text">Sito in italiano e ucraino, listino chiaro e prenotazione con un tocco su WhatsApp, anche per il servizio a domicilio.</p>
+            <ul class="work__tags"><li>Sito web</li><li>Prenotazioni WhatsApp</li><li>IT / UA</li></ul>
+            <a class="work__link" href="https://barbervovk.it/" target="_blank" rel="noopener">Guarda il sito <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work__media">
+            <img class="work__desktop" src="assets/img/works/vovk-desktop.webp" alt="Barber Vovk, pagina principale su computer" width="1200" height="750" loading="lazy" decoding="async">
+            <img class="work__phone" src="assets/img/works/vovk-phone.webp" alt="Barber Vovk su telefono" width="440" height="880" loading="lazy" decoding="async">
+          </div>
+        </article>
+
+        <article class="work" style="--work-bg:#f5e6d3; --work-fg:#2a1a0e">
+          <div class="work__info">
+            <p class="work__meta">Bar e caffetteria · Brescia</p>
+            <h3 class="work__title">Caffè Bar Squisito</h3>
+            <p class="work__text">Prenotazione del tavolo in un minuto, ordini a domicilio con Deliveroo e Glovo, menu con i prezzi sempre a portata di mano.</p>
+            <ul class="work__tags"><li>Sito web</li><li>Prenotazioni</li><li>Delivery</li></ul>
+            <a class="work__link" href="https://squisito-brescia.netlify.app/" target="_blank" rel="noopener">Guarda il sito <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work__media">
+            <img class="work__desktop" src="assets/img/works/squisito-desktop.webp" alt="Caffè Bar Squisito, pagina principale su computer" width="1200" height="750" loading="lazy" decoding="async">
+            <img class="work__phone" src="assets/img/works/squisito-phone.webp" alt="Caffè Bar Squisito su telefono" width="440" height="880" loading="lazy" decoding="async">
+          </div>
+        </article>
+
+        <article class="work" style="--work-bg:#15213b; --work-fg:#f3eee7">
+          <div class="work__info">
+            <p class="work__meta">Barbiere · Brescia <span class="work__badge">Concept</span></p>
+            <h3 class="work__title">Houda Barbiere</h3>
+            <p class="work__text">Prenotazione in tre tocchi: servizio, sfumatura e orario. La richiesta arriva su WhatsApp. Sito in italiano e arabo.</p>
+            <ul class="work__tags"><li>Sito web</li><li>Prenotazioni WhatsApp</li><li>IT / AR</li></ul>
+            <a class="work__link" href="https://golden-basbousa-402d78.netlify.app/" target="_blank" rel="noopener">Guarda il sito <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work__media">
+            <img class="work__desktop" src="assets/img/works/houda-desktop.webp" alt="Houda Barbiere, pagina principale su computer" width="1200" height="750" loading="lazy" decoding="async">
+            <img class="work__phone" src="assets/img/works/houda-phone.webp" alt="Houda Barbiere su telefono" width="440" height="880" loading="lazy" decoding="async">
+          </div>
+        </article>
+
+        <article class="work" style="--work-bg:#ece6dd; --work-fg:#1b1b1b">
+          <div class="work__info">
+            <p class="work__meta">Studio tatuaggi · Brescia <span class="work__badge">Concept</span></p>
+            <h3 class="work__title">Ele Style Tattoo</h3>
+            <p class="work__text">Il cliente racconta l’idea del tatuaggio in un modulo guidato e la richiesta arriva su WhatsApp, già con tutti i dettagli.</p>
+            <ul class="work__tags"><li>Sito web</li><li>Modulo guidato</li><li>WhatsApp</li></ul>
+            <a class="work__link" href="https://genuine-treacle-a91f59.netlify.app/" target="_blank" rel="noopener">Guarda il sito <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work__media">
+            <img class="work__desktop" src="assets/img/works/elestyle-desktop.webp" alt="Ele Style Tattoo, pagina principale su computer" width="1200" height="750" loading="lazy" decoding="async">
+            <img class="work__phone" src="assets/img/works/elestyle-phone.webp" alt="Ele Style Tattoo su telefono" width="440" height="880" loading="lazy" decoding="async">
+          </div>
+        </article>
+
+        <article class="work" style="--work-bg:#2a0b0b; --work-fg:#f3eee7">
+          <div class="work__info">
+            <p class="work__meta">Palestra · Genova <span class="work__badge">Concept</span></p>
+            <h3 class="work__title">Body Gym Genova</h3>
+            <p class="work__text">Prova gratuita prenotabile in 30 secondi, percorso consigliato in base all’obiettivo, corsi e foto vere della palestra.</p>
+            <ul class="work__tags"><li>Sito web</li><li>Prova gratuita</li><li>Corsi</li></ul>
+            <a class="work__link" href="https://body-gym-genova-demo.netlify.app/" target="_blank" rel="noopener">Guarda il sito <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="work__media">
+            <img class="work__desktop" src="assets/img/works/bodygym-desktop.webp" alt="Body Gym Genova, pagina principale su computer" width="1200" height="750" loading="lazy" decoding="async">
+            <img class="work__phone" src="assets/img/works/bodygym-phone.webp" alt="Body Gym Genova su telefono" width="440" height="880" loading="lazy" decoding="async">
+          </div>
+        </article>
+      </div>
+
+      <div class="works__cta">
+        <p>Vuoi un sito così per la tua attività?</p>
+        <a class="btn btn--dark btn--lg" href="https://wa.me/390000000000" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+          Parliamone su WhatsApp
+        </a>
       </div>
     </section>
   </main>
 
-  <a class="sticky-cta btn btn--dark btn--lg" href="https://t.me/scatto_team" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-    <svg class="icon" aria-hidden="true"><use href="#i-tg"/></svg>
-    Обсудить проект в Telegram
+  <a class="sticky-cta btn btn--dark btn--lg" href="https://wa.me/390000000000" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
+    <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+    Scrivici su WhatsApp
   </a>
 
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.94 4.3 18.7 19.6c-.24 1.08-.88 1.35-1.79.84l-4.94-3.64-2.38 2.3c-.26.26-.49.48-1 .48l.36-5.03 9.15-8.27c.4-.36-.09-.55-.62-.2L6.17 13.2 1.3 11.68c-1.06-.33-1.08-1.06.22-1.57L20.55 2.77c.88-.32 1.65.2 1.39 1.53Z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L3 21l4.4-1.1A9.2 9.2 0 1 0 12 2.8Z"/>
+      <path fill="currentColor" d="M8.7 7.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2 0 .4-.1.6l-.5.6c-.1.2-.2.3 0 .6.4.8 1.1 1.5 1.9 2.1.6.4 1 .6 1.2.7.2.1.4 0 .5-.1l.7-.8c.2-.2.3-.2.6-.1l1.7.8c.3.1.4.2.4.4.1.6-.2 1.4-.9 1.8-.7.4-1.5.5-2.5.2-2.2-.7-4.1-2.3-5.3-4.4-.6-1-.8-1.9-.7-2.8.1-.5.3-.9.4-1.3Z"/>
+    </symbol>
   </svg>
 </body>
 </html>

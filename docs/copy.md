@@ -1,168 +1,147 @@
-# Тексты главной страницы (черновик v1)
+# Тексты сайта (v2, итальянский)
 
-Структура взята из `docs/brief.md`, подача — по мотивам Clou.
-`[в квадратных скобках]` — то, что нужно подставить или подтвердить.
-Обращаемся к клиенту на «вы».
+Сайт для клиентов в Италии, поэтому все тексты на итальянском, обращение на «tu».
+Русские пояснения даны курсивом. `[в квадратных скобках]` — то, что нужно подставить или подтвердить.
 
 ---
 
 ## Мета
 
-- **Title:** Scatto — сайты, автоматизация и брендинг для малого бизнеса
-- **Description:** Делаем сайты, Telegram-ботов и фирменный стиль для небольшого бизнеса. Заявки сразу в Telegram, понятные цены, запуск от [2 недель].
+- **Title:** Scatto — Siti web, branding e Google Maps per attività locali
+- **Description:** Siti web, branding e schede Google Maps per attività locali in Italia. I clienti ti trovano su Google e prenotano su WhatsApp in pochi tocchi.
 
 ---
 
-## 1. Первый экран
+## 1. Первый экран ✅ на сайте
 
-- **Метка:** Сайты · Автоматизация · Брендинг
-- **Крупный логотип:** SCATTO
-- **Заголовок (H1):** Сайты, автоматизация и брендинг для небольшого бизнеса
-- **Подзаголовок:** Делаем так, чтобы клиенты находили вас сами, заявки приходили в Telegram, а рутина не съедала ваш день.
-- **Главная кнопка:** Обсудить проект → Telegram
-- **Вторая ссылка:** Смотреть работы ↓
-- **Подпись под кнопкой:** Ответим в течение часа · первый созвон бесплатно
+- **H1:** Siti web, branding e Google Maps per attività locali
+- **Подзаголовок:** Ti facciamo trovare su Google, ti diamo un’immagine che si ricorda e un sito da cui i clienti prenotano su WhatsApp in pochi tocchi.
+- **Кнопка:** Scrivici su WhatsApp · **ссылка:** Guarda i lavori ↓
+- **Под кнопкой:** Rispondiamo entro un’ora · prima consulenza gratuita
 
-Запасные заголовки для теста:
-- «Сайт, бот и фирменный стиль для вашего бизнеса — под ключ»
-- «Больше заявок и меньше рутины для небольшого бизнеса»
+*Плитки: скриншоты Barber Vovk, Squisito, Body Gym и пример заявки в WhatsApp.*
 
 ---
 
-## 2. Знакомство (тёмный блок, как у Clou)
+## 2. Знакомство ✅ на сайте
 
-**Привет! Мы Scatto** — команда, которая берёт на себя то, на что у владельца бизнеса не хватает рук: сайт, который приводит клиентов, бота, который принимает заявки, и бренд, который запоминают.
+**Ciao! Siamo Scatto** — facciamo per le attività locali quello per cui il titolare non ha tempo: un sito che porta clienti, prenotazioni che arrivano da sole su WhatsApp, un’immagine che si ricorda e una scheda Google che ti fa trovare.
 
-Scatto по-итальянски — «щелчок». Так и работаем — как по щелчку пальцев: вы рассказываете о задаче, а дальше всё делается будто само. Остальное берём на себя и говорим с вами без технических терминов.
+Scatto, come uno schiocco di dita: ci racconti cosa ti serve e il resto succede, senza tecnicismi e senza perdere tempo.
 
-Кнопка: **Как мы работаем**
-
----
-
-## 3. Доверие одной строкой
-
-`[N]` проектов · `[ниши: кофейни, салоны, студии, …]` · `[логотипы клиентов]` · Ещё работы в Instagram →
+Кнопка: **Come lavoriamo**
 
 ---
 
-## 4. Услуги
+## 3. Lavori ✅ на сайте
 
-**Сайты**
-Сайт, на который не стыдно дать ссылку и с которого пишут.
-- Лендинг или многостраничный сайт
-- Тексты и структура под ваших клиентов
-- Удобный на телефоне: оттуда приходит большинство людей
-- Заявки сразу в Telegram, аналитика подключена
+**Siti pensati per il telefono, da cui i clienti prenotano davvero**
+Barbieri, caffè, palestre e studi di Brescia e Genova. Ogni progetto parte da una domanda: cosa deve fare il cliente appena apre il sito?
 
-от `[X]` ₽ · от `[2]` недель → *Смотреть сайты*
-
-**Автоматизация**
-Заявки, записи и напоминания без ручной работы.
-- Telegram-бот для записи, заказов и ответов на частые вопросы
-- Связка сайта с CRM или Google-таблицей
-- Автоматические напоминания и уведомления
-- Приём оплаты онлайн
-
-от `[X]` ₽ · от `[1]` недели → *Смотреть примеры*
-
-**Брендинг**
-Образ, который узнают с первого взгляда, от логотипа до Instagram.
-- Логотип, цвета и шрифты
-- Гайд: как всем этим пользоваться
-- Шаблоны для постов и сторис
-- Визитки, упаковка, вывеска
-
-от `[X]` ₽ · от `[2]` недель → *Смотреть айдентику*
-
----
-
-## 5. Кейсы (шаблон карточки)
-
-> **`[Название клиента]`** · `[ниша, город]`
-> Метки: Сайт · Бот · Брендинг
->
-> **Задача.** `[1–2 предложения: что болело. Пример: «Записи шли в директ, половина терялась»]`
-> **Что сделали.** `[сайт / бот / айдентика — ключевые решения]`
-> **Результат.** `[цифра: заявок в месяц, часов в неделю, сроки]`
-> **«`[Цитата клиента]`»** — `[Имя]`, `[роль]`, `[@instagram]`
->
-> → Хочу так же
-
-Заголовок блока: **Работы**
-Подзаголовок: Проекты, за которые нам не стыдно: с задачей, решением и результатом.
-Ссылка в конце: Все работы →
-
----
-
-## 6. Как мы работаем
-
-1. **Созвон, 30 минут.** Разбираем задачу и сразу называем примерную цену и сроки.
-2. **Предложение и договор.** Фиксируем объём, стоимость и этапы. Оплата частями `[подтвердить]`.
-3. **Прототип и дизайн.** Показываем, вы правите. `[N]` кругов правок включены.
-4. **Запуск.** Подключаем домен, аналитику и заявки в Telegram, показываем, как всем пользоваться.
-5. **Поддержка.** `[1 месяц]` бесплатно, дальше по желанию.
-
----
-
-## 7. Отзывы
-
-Заголовок: **Что говорят клиенты**
-`[2–3 отзыва: фото, имя, бизнес, ссылка на Instagram. Без стоков и без анонимов]`
-Под отзывами кнопка: Обсудить проект
-
----
-
-## 8. Пакеты и цены
-
-Заголовок: **Сколько стоит**
-Подзаголовок: Точную цену назовём после созвона. Вот ориентиры, чтобы вы понимали порядок сумм.
-
-| Старт | Бизнес | Под ключ |
+| Проект | Подпись | Статус |
 |---|---|---|
-| Лендинг + заявки в Telegram | Сайт + бот для записи | Брендинг + сайт + автоматизация |
-| от `[X]` ₽ | от `[X]` ₽ | от `[X]` ₽ |
+| Barber Vovk | Barbiere · Genova | на сайте клиента |
+| Caffè Bar Squisito | Bar e caffetteria · Brescia | `[реальный клиент или демо?]` |
+| Houda Barbiere | Barbiere · Brescia | Concept (демо) |
+| Ele Style Tattoo | Studio tatuaggi · Brescia | Concept (демо) |
+| Body Gym Genova | Palestra · Genova | Concept (демо) |
 
-От чего зависит цена: количество страниц, есть ли готовые тексты и фото, нужна ли связка с CRM и оплатой.
+*Когда появятся результаты и отзывы, в каждую карточку добавим строку «Risultato» и цитату клиента. Например: «+[N] prenotazioni al mese su WhatsApp» — «[Citazione]», [Nome].*
 
----
-
-## 9. Частые вопросы
-
-- **Сколько это стоит?** Ориентиры есть в блоке выше. Точную цену назовём после короткого созвона, бесплатно.
-- **Сколько времени займёт?** Лендинг от `[2]` недель, бот от `[1]` недели, брендинг от `[2]` недель.
-- **Мне нужно что-то готовить?** Нет. Расскажите о бизнесе и пришлите, что уже есть. Тексты и структуру мы сделаем сами.
-- **Можно оплатить частями?** `[Да: 50% до старта, 50% после запуска]`
-- **А если не понравится?** На каждом этапе показываем результат и вносим правки, `[N]` кругов уже в цене.
-- **Смогу сам менять тексты и цены?** Да, покажем как. Или сделаем это за вас в рамках поддержки.
-- **Вы работаете с другими городами?** Да, всё делаем удалённо, созвоны в Telegram или Zoom.
+Финал блока: **Vuoi un sito così per la tua attività?** → Parliamone su WhatsApp
 
 ---
 
-## 10. Финальный блок
+## 4. Servizi
 
-**Расскажите о задаче — за один созвон предложим решение и назовём цену.**
+**Siti web**
+Un sito che lavora mentre tu lavori.
+- Pensato prima di tutto per il telefono
+- Prenotazioni e richieste che arrivano su WhatsApp
+- Testi scritti per i tuoi clienti, anche in più lingue
+- Collegato alla tua scheda Google e a Instagram
 
-Кнопки: **Написать в Telegram** · WhatsApp
-Или форма: Имя · Телефон или @ник · Что нужно сделать? → **Отправить**
-Под формой: Ответим в течение часа в рабочее время. Нажимая кнопку, вы соглашаетесь с [политикой конфиденциальности].
+da `[X]` € · pronto in `[7]` giorni
 
-Подсказка-фишка: *Эта форма — пример нашей автоматизации: заявка прямо сейчас прилетит нам в Telegram.*
+**Google Maps**
+Fatti trovare da chi ti cerca qui vicino.
+- Creazione o sistemazione della scheda Google Business
+- Categorie, orari, servizi e listino giusti
+- Foto e descrizione che convincono
+- Link diretti al sito e a WhatsApp
+- Come chiedere più recensioni ai clienti
+
+da `[X]` €
+
+**Branding**
+Un’immagine che i clienti riconoscono al primo sguardo.
+- Logo, colori e font
+- Insegna, biglietti da visita, menu o listino
+- Grafiche per post e storie di Instagram
+
+da `[X]` €
+
+*Автоматизацию (запись через WhatsApp, формы-квизы) отдельной услугой пока не выносим: она входит в сайт. `[Подтвердить]`*
 
 ---
 
-## 11. Подвал
+## 5. Come lavoriamo
 
-Scatto Team · `[город / удалённо]` · Telegram · WhatsApp · Instagram · `[e-mail]` · Политика конфиденциальности
+1. **Ci scrivi su WhatsApp.** Dieci minuti per capire la tua attività. Ti diciamo subito prezzo e tempi.
+2. **Ti mostriamo una proposta.** Una bozza con i tuoi servizi e il tuo stile, `[prima di chiederti di pagare?]`.
+3. **La sistemiamo insieme.** `[N]` giri di modifiche inclusi.
+4. **Online.** Dominio, scheda Google e prenotazioni su WhatsApp: tutto collegato e funzionante.
+5. **Assistenza.** `[1 mese]` inclusa, poi solo se ti serve.
+
+---
+
+## 6. Prezzi
+
+**Quanto costa**
+Prezzi chiari, niente sorprese. Il preventivo esatto te lo diamo dopo una chiacchierata su WhatsApp.
+
+| Scheda Google | Sito | Tutto incluso |
+|---|---|---|
+| Scheda Google Business sistemata | Sito + prenotazioni su WhatsApp | Branding + sito + scheda Google |
+| da `[X]` € | da `[X]` € | da `[X]` € |
+
+---
+
+## 7. Domande frequenti
+
+- **Quanto costa?** Trovi i prezzi di partenza qui sopra. Il preventivo esatto è gratuito: scrivici su WhatsApp.
+- **In quanto tempo è pronto?** Un sito in `[7]` giorni, la scheda Google in `[2–3]` giorni.
+- **Devo preparare qualcosa?** No. Bastano due parole sulla tua attività e qualche foto. I testi li scriviamo noi.
+- **Posso pagare in due rate?** `[Sì: metà all’inizio, metà alla consegna]`
+- **Il dominio è mio?** `[Sì, è intestato a te]`
+- **Chi aggiorna prezzi e orari?** Ti mostriamo come farlo da solo, oppure lo facciamo noi con l’assistenza.
+- **Lavorate in tutta Italia?** `[Sì, tutto online / Brescia e Genova di persona]`
+
+---
+
+## 8. Contatti (финал)
+
+**Raccontaci la tua attività: in un messaggio ti diciamo cosa serve e quanto costa.**
+
+Кнопки: **Scrivici su WhatsApp** · Instagram
+Или форма: Nome · Telefono o WhatsApp · Di cosa hai bisogno? → **Invia**
+Под формой: Rispondiamo entro un’ora. Inviando accetti l’[informativa privacy].
+
+---
+
+## 9. Подвал
+
+Scatto Team · `[città]` · P.IVA `[...]` · WhatsApp · Instagram · `[email]` · Privacy · Cookie
 
 ---
 
 ## Что нужно от команды
 
-1. Ник в Telegram и номер WhatsApp для кнопок.
+1. Номер WhatsApp для кнопок. Сейчас стоит заглушка `wa.me/390000000000`.
 2. Ссылка на Instagram.
-3. ~~Логотип и цвета~~ — есть временный логотип из Instagram (S в уголках видоискателя, чёрный + шампань), он на сайте.
-4. 3–4 лучших проекта: фото или скриншоты, задача, результат, отзыв клиента.
-5. Цены «от» и сроки по трём услугам.
-6. Подтвердить: оплата частями, сколько кругов правок, сколько месяцев поддержки («ответим за час» и «первый созвон бесплатно» — подтверждены).
-7. ~~Смысл названия~~ — «как по щелчку пальцев».
-8. Карты (MAPS в логотипе): это отдельная услуга? Если да — добавить в услуги.
+3. Squisito — реальный клиент или демо? Можно ли показывать демо (Houda, Ele Style, Body Gym) с настоящими названиями? Сейчас они подписаны «Concept».
+4. Цены «da X €» и сроки: сайт, Google Maps, брендинг.
+5. Показываете ли вы клиенту готовую демо-версию до оплаты? Если да, это сильный аргумент, и его стоит вынести на сайт.
+6. Оплата частями, сколько кругов правок, сколько поддержки, чей домен.
+7. Город и P.IVA для подвала. В Италии P.IVA на сайте компании обязательна.
+8. Автоматизация — отдельная услуга или часть сайта?

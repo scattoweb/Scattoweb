@@ -4,7 +4,7 @@ const menu = document.getElementById('menu');
 
 function setMenu(open) {
   burger.setAttribute('aria-expanded', String(open));
-  burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+  burger.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
   menu.hidden = !open;
 }
 
