@@ -264,6 +264,7 @@ a { color: inherit; }
   border-radius: 999px;
   font-size: 11px;
   line-height: 1.3;
+  white-space: nowrap;
 }
 
 /* Скриншоты работ */
@@ -420,6 +421,7 @@ a { color: inherit; }
   justify-items: start;
   margin-top: 40px;
 }
+.works__cta > div { display: grid; gap: 8px; justify-items: start; }
 .works__cta p { max-width: 20ch; font-size: clamp(24px, 6vw, 40px); font-weight: 500; line-height: 1.1; letter-spacing: -.02em; }
 
 @media (min-width: 960px) {
@@ -448,6 +450,121 @@ a { color: inherit; }
     align-items: center;
     margin-top: 64px;
   }
+}
+
+/* ---------- Аргументы под кнопкой ---------- */
+.proof {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.proof li::before { content: "✓"; margin-right: 6px; font-weight: 600; color: var(--gold-dark); }
+
+.btn--outline { border: 1px solid rgba(243, 238, 231, .35); color: var(--on-dark); }
+.btn--outline:hover { border-color: var(--on-dark); }
+
+/* ---------- Servizi e prezzi ---------- */
+.services { padding: 72px var(--gutter) 24px; }
+.services__list { display: grid; gap: 12px; }
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 28px 22px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+.service__title { margin: 0; font-size: clamp(26px, 6vw, 34px); font-weight: 500; letter-spacing: -.02em; line-height: 1.1; }
+.service__lead { color: var(--ink-soft); }
+.service__list { margin: 0; padding: 0; list-style: none; font-size: 16px; }
+.service__list li { padding: 10px 0; border-top: 1px solid var(--line); }
+.service__price { margin-top: auto; }
+.service__price p:first-child { font-size: 44px; font-weight: 500; letter-spacing: -.03em; line-height: 1.1; }
+.service__price span { font-size: 16px; font-weight: 400; letter-spacing: 0; color: var(--ink-soft); }
+.service__price p.service__quote { font-size: 28px; }
+.service__note { margin-top: 4px; font-size: 14px; color: var(--ink-soft); }
+.service .btn { width: 100%; }
+
+.service--main { border-color: var(--dark); background: var(--dark); color: var(--on-dark); }
+.service--main .service__lead,
+.service--main .service__price span,
+.service--main .service__note { color: var(--on-dark-soft); }
+.service--main .service__list li { border-color: rgba(243, 238, 231, .14); }
+.service--main .service__note { color: var(--gold); }
+
+/* ---------- Come lavoriamo ---------- */
+.process { padding: 72px var(--gutter) 24px; }
+.process__list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.step {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 24px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.step__num { font-size: 14px; font-weight: 500; color: var(--gold-dark); }
+.step__title { margin: 4px 0 0; font-size: 24px; font-weight: 500; letter-spacing: -.02em; line-height: 1.15; }
+.step p { color: var(--ink-soft); }
+.step--accent { border-color: var(--gold-light); background: var(--gold-light); }
+.step--accent p { color: var(--ink); }
+.step--accent .step__num { color: var(--ink); }
+
+/* ---------- Contatti ---------- */
+.contact { padding: 48px 8px 8px; }
+.contact__panel {
+  display: grid;
+  gap: 28px;
+  padding: 56px 20px 32px;
+  border-radius: var(--radius);
+  background: var(--dark);
+  color: var(--on-dark);
+}
+.contact__title {
+  margin: 0;
+  max-width: 18ch;
+  font-size: clamp(30px, 8vw, 76px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.03em;
+}
+.contact__actions { display: grid; gap: 10px; }
+.contact__hint { font-size: 15px; color: var(--on-dark-soft); }
+.contact__hint a { color: var(--on-dark); }
+
+/* ---------- Footer ---------- */
+.footer {
+  display: grid;
+  gap: 12px;
+  padding: 32px var(--gutter) 112px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.footer__mark { width: 44px; height: auto; }
+.footer__links { display: flex; gap: 20px; }
+.footer__links a { min-height: 44px; display: inline-flex; align-items: center; color: var(--ink); }
+
+@media (min-width: 600px) {
+  .proof { justify-content: start; }
+  .contact__actions { display: flex; flex-wrap: wrap; }
+}
+
+@media (min-width: 960px) {
+  .services, .process { padding-top: 120px; }
+  .services__list { grid-template-columns: 1.15fr 1fr 1fr; }
+  .service { padding: 36px 32px 28px; }
+  .process__list { grid-template-columns: repeat(4, 1fr); }
+  .step { min-height: 240px; padding: 28px; }
+  .contact { padding: 120px 8px 8px; }
+  .contact__panel { min-height: 70vh; align-content: space-between; padding: 96px 64px 56px; }
+  .footer { grid-template-columns: auto 1fr auto; align-items: center; gap: 24px; padding-bottom: 32px; }
 }
 
 /* ---------- Sticky CTA (мобильный) ---------- */
@@ -502,6 +619,7 @@ a { color: inherit; }
 
   .tile--a    { --w: min(14vw, 24vh); top: 0; left: 9%; }
   .tile--a .tile__tag { top: 12px; bottom: auto; }
+  .tile--c .tile__tag { left: 8px; bottom: 8px; font-size: 11px; }
   .tile--b    { --w: min(11vw, 19vh); top: 2vh; right: 8%; }
   .tile--c    { display: block; --w: min(10vw, 17vh); bottom: -6vh; left: 24%; z-index: 3; }
   .tile--a .tile__tag, .tile--b .tile__tag { display: block; }
